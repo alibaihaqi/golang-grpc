@@ -1,7 +1,6 @@
 FROM bitnami/golang:1.21.5 as package
 
 WORKDIR /go/src
-ENV TZ=Asia/Jakarta
 ENV GOPROXY=https://proxy.golang.org
 
 COPY . .
